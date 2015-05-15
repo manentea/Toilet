@@ -16,6 +16,11 @@ module Parser
       thing_to_save.each {|row| csv << [(row.name.include?('Park') ? row.name : (row.name + ' Park')), row.location, row.handicap, row.borough]}
     end
   end
+
+  def self.coord_save(filename, thing_to_save)
+    CSV.open(filename, 'wb') do |csv|
+
+  end
 end
 
 # p Parser.parse('test.csv')
