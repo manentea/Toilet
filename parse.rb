@@ -19,6 +19,7 @@ module Parser
 
   def self.coord_save(filename, thing_to_save)
     CSV.open(filename, 'wb') do |csv|
+    end
 
   end
 end

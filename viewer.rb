@@ -27,7 +27,23 @@ module Viewer
   end
 
   def self.print_result(bathroom)
-    puts "Here you go. The bathroom you should head to is at #{bathroom.name}, #{bathroom.address}. Are you relieved...I HOPE NOT YET!"
+    puts "Here you go. The bathroom you should head to is at #{bathroom.name}, #{bathroom.location}. Are you relieved...I HOPE NOT YET!"
+  end
+
+  def self.what_borough
+    puts "What borough are you looking for a bathroom in?"
+  end
+
+  def self.bad_answer
+    puts "Good news, I found a bathroom in New Jersey!\nIs that what you wanted?"
+  end
+
+  def self.apology
+    puts "Sorry, I'm not very good at this. Also, I've been drinking."
+  end
+
+  def self.game_over
+    puts "Screw this, I'm going out for a smoke. Guess you're just gonna shit yourself. Adios."
   end
 
 end

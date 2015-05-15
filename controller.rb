@@ -36,7 +36,7 @@ class Controller
       Viewer.input
       Viewer.apology
       Viewer.bad_answer
-      dir_of_rest.sample.to_s
+      puts dir_of_rest.sample
     elsif answer.downcase.include?('serious')
       Viewer.what_borough
       boro = Viewer.input

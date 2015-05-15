@@ -1,5 +1,4 @@
-require 'geocoder'
-require 'geokit'
+
 
 class RestRoom
   attr_reader :name, :location, :borough, :handicap
